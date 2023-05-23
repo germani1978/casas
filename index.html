@@ -8,61 +8,98 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 </head>
 
 <body>
-    <div class="cont-header">
-        <header>
+    <div class="cont-header-section1 flex-cent">
+        <header class="centrar flex-hor">
             <div class="logo">
                 <img class="casa" src="img/house.png" alt="Icono de la empresa">
             </div>
             <nav>
-                <ul>
+                <ul class="flex-hor">
                     <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Comprar</a></li>
-                    <li><a href="#">Vender</a></li>
-                    <li><a href="#">Remodelar</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#propiedades">Comprar</a></li>
+                    <li><a href="#proceso">Vender</a></li>
+                    <li><a href="#testimonios">Opiniones</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
         </header>
-    </div>
-
-    <main>
+        
         <section id="inicio">
             <h1>Bienvenido a nuestra página</h1>
             <p>Ofrecemos servicios de compra, remodelación y venta de casas.</p>
-            <div id="destacados">
-                <!-- Aquí van los destacados -->
-            </div>
         </section>
 
-        <section id="propiedades">
+    </div> <!-- cont-header-section1 -->
+
+    <main>
+        <section id="propiedades" class="flex-cent">
             <h2>Propiedades disponibles</h2>
-            <div id="listado-propiedades">
-                <!-- Aquí van las propiedades disponibles -->
+            <div id="listado-propiedades" class="flex-hor">
+                <img loading="lazy" src="/img/foto2.jpg" alt="" srcset="">
+                <img loading="lazy"src="/img/foto3.jpg" alt="" srcset="">
+                <img loading="lazy" src="/img/foto4.jpg" alt="" srcset="">
+                <img loading="lazy" src="/img/foto5.jpg" alt="" srcset="">
             </div>
         </section>
 
-        <section id="proceso">
-            <h2>Proceso de compra y venta</h2>
-            <p>Aquí explicamos nuestro proceso de compra y venta de casas.</p>
+        <section id="proceso" class="flex-hor">
+            <div class="cont-tit-proceso">
+                <h2>Proceso de compra y venta</h2>
+                <p class="process-description">Aquí explicamos nuestro proceso de compra y venta de casas 
+                    <a href="#contacto">
+                        <i class="fas fa-arrow-right fa-xs vibrate-1" style="color: yellow;"></i>
+                    </a>
+                </p>
+            </div>
+            <img class="proceso-img scale-up-center"
+                loading="lazy"
+                src="/img/foto6.jpg" alt=""
+                srcset="">
         </section>
 
-        <section id="testimonios">
+        <section id="testimonios" class="flex-cent">
             <h2>Testimonios de clientes satisfechos</h2>
-            <div id="testimonios-lista">
-                <!-- Aquí van los testimonios -->
+            <div id="testimonios-lista" class="flex-cent">
+
+                <div class="testimonial-container">
+                    <div class="testimonial">
+                        <img loading="lazy" src="/img/avatar1.jpg" alt="Cliente 1">
+                        <h3>Ana G.</h3>
+                        <p>"Estoy realmente impresionado con el servicio que recibí de vuestra empresa. Desde el primer contacto hasta el final, todo fue impecable. El equipo se mostró profesional y amable en todo momento, y cumplieron con todas mis expectativas. Sin duda, los recomendaré a mis amigos y familiares. ¡Gracias por hacer de mi experiencia una excelente!"</p>
+                    </div>
+
+                    <div class="testimonial">
+                        <img loading="lazy" src="/img/avatar2.jpg" alt="Cliente 2">
+                        <h3>Carlos M.</h3>
+                        <p>No puedo estar más contento con el trabajo realizado por vuestro equipo. Desde el momento en que solicité vuestro servicio, noté un alto nivel de profesionalismo y compromiso. Cumplieron con todas mis peticiones y superaron mis expectativas. La comunicación fluida y el resultado final impecable demuestran su excelencia en el campo. ¡Recomendaré vuestros servicios a cualquiera que necesite calidad y confiabilidad!</p>
+                    </div>
+
+                    <div class="testimonial">
+                        <img loading="lazy" src="/img/avatar3.jpg" alt="Cliente 3">
+                        <h3>Laura S.</h3>
+                        <p>"Quiero expresar mi más sincero agradecimiento por el servicio excepcional que me brindaron. Vuestra atención al detalle y vuestra rápida respuesta a mis consultas fueron impresionantes. Me sentí valorado como cliente y me sorprendió la calidad del producto final. Estoy encantado de haber elegido vuestros servicios y definitivamente volveré en el futuro."</p>
+                    </div>
+                </div>
+
             </div>
         </section>
     </main>
 
-    <footer>
+    <footer id="contacto" class="flex-cent">
         <p>Información de contacto:</p>
-        <!-- Aquí va la información de contacto -->
+        <ul>
+            <li><i class="fas fa-map-marker-alt"></i> Dirección: Calle Ejemplo, Ciudad, País</li>
+            <li><i class="fas fa-phone"></i> Teléfono: 123-456-789</li>
+            <li><i class="fas fa-envelope"></i> Email: ejemplo@ejemplo.com</li>
+        </ul>
     </footer>
+
 
     <script src="scripts.js"></script>
 </body>
