@@ -15,12 +15,12 @@
 
 <body>
     <div class="cont-header-section1">
-        <header class="flex-hor">
+        <header>
             <div class="logo">
                 <img class="casa" src="img/house.png" alt="Icono de la empresa">
             </div>
             <nav>
-                <ul>
+                <ul class="bar">
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#propiedades">Comprar</a></li>
                     <li><a href="#proceso">Vender</a></li>
@@ -32,7 +32,7 @@
 
         <img class="fondo" src="/img/foto1.jpg">
 
-        <i id="icon-menu" class="fas fa-bars" onclick="toggleMenu()"></i>
+        <i id="icon-menu" class="fas fa-bars"></i>
 
         <section id="inicio">
             <h1>Bienvenido a nuestra página</h1>
@@ -41,12 +41,12 @@
 
         
 
-    </div> <!-- cont-header-section1 -->
-<!-- 
+    </div> 
+
     <main>
-        <section id="propiedades" class="flex-cent">
+        <section id="propiedades">
             <h2>Propiedades disponibles</h2>
-            <div id="listado-propiedades" class="flex-hor">
+            <div id="listado-propiedades">
                 <img loading="lazy" src="/img/foto2.jpg" alt="" srcset="">
                 <img loading="lazy"src="/img/foto3.jpg" alt="" srcset="">
                 <img loading="lazy" src="/img/foto4.jpg" alt="" srcset="">
@@ -54,7 +54,10 @@
             </div>
         </section>
 
-        <section id="proceso" class="flex-hor">
+
+     
+
+        <section id="proceso">
             <div class="cont-tit-proceso">
                 <h2>Proceso de compra y venta</h2>
                 <p class="process-description">Aquí explicamos nuestro proceso de compra y venta de casas 
@@ -69,9 +72,9 @@
                 srcset="">
         </section>
 
+        
         <section id="testimonios" class="flex-cent">
             <h2>Testimonios de clientes satisfechos</h2>
-            <div id="testimonios-lista" class="flex-cent">
 
                 <div class="testimonial-container">
                     <div class="testimonial">
@@ -83,15 +86,14 @@
                     <div class="testimonial">
                         <img loading="lazy" src="/img/avatar2.jpg" alt="Cliente 2">
                         <h3>Carlos M.</h3>
-                        <p>No puedo estar más contento con el trabajo realizado por vuestro equipo. Desde el momento en que solicité vuestro servicio, noté un alto nivel de profesionalismo y compromiso. Cumplieron con todas mis peticiones y superaron mis expectativas. La comunicación fluida y el resultado final impecable demuestran su excelencia en el campo. ¡Recomendaré vuestros servicios a cualquiera que necesite calidad y confiabilidad!</p>
+                        <p>No puedo estar más contento con el trabajo realizado por vuestro equipo. Desde el momento en que solicité vuestro servicio, noté un alto nivel de profesionalismo y compromiso. Cumplieron con todas mis peticiones y superaron mis expectativas. La comunicación fluida y el resultado final impecable demuestran su excelencia en el campo.</p>
                     </div>
 
                     <div class="testimonial">
                         <img loading="lazy" src="/img/avatar3.jpg" alt="Cliente 3">
                         <h3>Laura S.</h3>
-                        <p>"Quiero expresar mi más sincero agradecimiento por el servicio excepcional que me brindaron. Vuestra atención al detalle y vuestra rápida respuesta a mis consultas fueron impresionantes. Me sentí valorado como cliente y me sorprendió la calidad del producto final. Estoy encantado de haber elegido vuestros servicios y definitivamente volveré en el futuro."</p>
+                        <p>"Quiero expresar mi más sincero agradecimiento por el servicio excepcional que me brindaron. Vuestra atención al detalle y vuestra rápida respuesta a mis consultas fueron impresionantes. Me sentí valorado como cliente y me sorprendió la calidad del producto final."</p>
                     </div>
-                </div>
 
             </div>
         </section>
@@ -105,7 +107,7 @@
             <li><i class="fas fa-envelope"></i> Email: ejemplo@ejemplo.com</li>
         </ul>
     </footer>
- -->
+
 
     <script src="scripts.js"></script>
 </body>
