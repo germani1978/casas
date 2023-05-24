@@ -25,8 +25,16 @@ imageContainer.addEventListener('mousemove', (e) => {
   imageContainer.scrollLeft = scrollLeft - walk;
 });
 
+const menu = document.getElementsByClassName('cont-header-section1');
+const sidebar = document.getElementsByTagName('nav');
+const icon = document.getElementById('icon-menu');
 
 
+function toggleMenu() {
+  console.log("click");
+  document.querySelector("icon-menu").classList.toggle("hidde")
+  document
+}
 
 
 

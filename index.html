@@ -14,13 +14,13 @@
 </head>
 
 <body>
-    <div class="cont-header-section1 flex-cent">
-        <header class="centrar flex-hor">
+    <div class="cont-header-section1">
+        <header class="flex-hor">
             <div class="logo">
                 <img class="casa" src="img/house.png" alt="Icono de la empresa">
             </div>
             <nav>
-                <ul class="flex-hor">
+                <ul>
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#propiedades">Comprar</a></li>
                     <li><a href="#proceso">Vender</a></li>
@@ -29,14 +29,20 @@
                 </ul>
             </nav>
         </header>
-        
+
+        <img class="fondo" src="/img/foto1.jpg">
+
+        <i id="icon-menu" class="fas fa-bars" onclick="toggleMenu()"></i>
+
         <section id="inicio">
             <h1>Bienvenido a nuestra página</h1>
             <p>Ofrecemos servicios de compra, remodelación y venta de casas.</p>
         </section>
 
-    </div> <!-- cont-header-section1 -->
+        
 
+    </div> <!-- cont-header-section1 -->
+<!-- 
     <main>
         <section id="propiedades" class="flex-cent">
             <h2>Propiedades disponibles</h2>
@@ -99,7 +105,7 @@
             <li><i class="fas fa-envelope"></i> Email: ejemplo@ejemplo.com</li>
         </ul>
     </footer>
-
+ -->
 
     <script src="scripts.js"></script>
 </body>
